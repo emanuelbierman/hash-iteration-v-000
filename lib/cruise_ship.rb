@@ -7,5 +7,5 @@
 # }
 
 def select_winner(passengers)
-  passengers.select {|winner| winner[0] == "A" ? puts winner : next }
+  passengers.select {|winner| {winner[0] == "A" ? puts winner : next} }
 end
