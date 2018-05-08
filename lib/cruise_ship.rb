@@ -7,5 +7,11 @@
 # }
 
 def select_winner(passengers)
-  passengers.select {|winner| {winner[0] == "A" ? puts winner : next} }
+  passengers.select do |winner|
+    if winner[0] == "A"
+      puts winner
+    else
+      next
+    end
+  end
 end
